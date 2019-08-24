@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222222</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFEB3B</color>
+    <color name="gris_fuerte">#6B6B6B</color>
+    <color name="amarillo">#FDE50E</color>
+    <color name="amarillo_200">#948601</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro">#000000</color>
+
+</resources>

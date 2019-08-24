@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityLogin"
+    android:orientation="vertical"
+    android:background="@color/negro"
+    android:gravity="center"
+    android:weightSum="100"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:textColor="@color/blanco"
+            android:gravity="center"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa tus datos de registro"
+            android:textColor="@color/blanco"
+            android:gravity="center"
+            android:textSize="24dp"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center|top"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <EditText
+
+                android:id="@+id/ed_usuario"
+                android:background="@drawable/border_edittext"
+                android:textStyle="bold"
+                android:layout_margin="16dp"
+                android:padding="12dp"
+                android:layout_weight="80"
+                android:textColor="@color/negro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="    Usuario"
+                android:textColorHint="@color/blanco"
+                >
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/ed_contrasena"
+                android:textStyle="bold"
+                android:layout_margin="16dp"
+                android:padding="12dp"
+                android:layout_weight="80"
+                android:textColor="@color/negro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="    Contraseña"
+                android:textColorHint="@color/blanco"
+                android:background="@drawable/border_edittext"
+                >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btn_iniciar_sesion"
+                android:textStyle="bold"
+                android:layout_margin="16dp"
+                android:padding="12dp"
+                android:background="@drawable/btn_generico"
+                android:layout_weight="80"
+                android:textColor="@color/negro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Sesion"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
