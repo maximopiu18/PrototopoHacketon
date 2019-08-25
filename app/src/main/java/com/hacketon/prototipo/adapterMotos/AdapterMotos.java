@@ -1,4 +1,4 @@
-package com.hacketon.prototipo.adapter;
+package com.hacketon.prototipo.adapterMotos;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,17 +33,20 @@ public class AdapterMotos extends RecyclerView.Adapter<HolderMotos>  {
     public void onBindViewHolder(final HolderMotos holder, final int position) {
 
 
-     /*   holder.tvName.setText(modeloList.get(position).getName());
-       // Log.e("TAG: ", "imgUrl :" + modelo.getDescripcion());
-        Picasso.with(context).load(modeloList.get(position).getPhoto())
-                .resize(200,300)
-                .centerInside()
-                .placeholder(R.drawable.logo_marvel)
-                .error(R.drawable.logo_marvel)
-                .into(holder.ivModelo);*/
+        holder.tvName.setText(Constantes.ListaMarca.get(position));
+        holder.tvModel.setText(Constantes.ListaModelo.get(position));
+        holder.tvDate.setText(Constantes.ListaFecha.get(position));
+        if(position==0) {
+            holder.ivModelo.setImageResource(R.drawable.img_moto);
+        }
+        if(position==1) {
+            holder.ivModelo.setImageResource(R.drawable.img_moto2);
+        }
+        if(position==2) {
+            holder.ivModelo.setImageResource(R.drawable.img_moto3);
+        }
 
-
-        holder.ivModelo.setOnClickListener(new View.OnClickListener() {
+        holder.itemLinear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -51,22 +54,6 @@ public class AdapterMotos extends RecyclerView.Adapter<HolderMotos>  {
                 posicionHeroe = position;
                 Intent intent = new Intent(context, Activity_Descripcion.class);
                 context.startActivity(intent);
-
-
-
-                //((Activity) context).setResult(RESULT_OK);
-                //((Activity) context).finish();
-                //  ((Activity) context).overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-
-               //   ((Activity) context).overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-
-
-  /*              Constantes.positionSuperheroe = position;
-                Intent intent = new Intent(context, Activity_Description.class);
-                context.startActivity(intent);*/
-                //((Activity) context).setResult(RESULT_OK);
-                //((Activity) context).finish();
-              //  ((Activity) context).overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
     }

@@ -1,6 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/img_back"
+            android:src="@drawable/ic_back_black"
+            android:padding="6dp"
+            ></ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_moto"
+                >
+            </ImageView>
+            <TextView
+                android:textColor="@color/amarillo"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Italika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Moto Deportiva 250z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_margin="6dp"
+                android:textColor="@color/negro"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="entregable DD-MM-AAAA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:background="@color/gris_claro"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <FrameLayout
+                    android:visibility="gone"
+                    android:id="@+id/frame_registrahuella"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <TextView
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="36dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/negro"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="center|top"
+                        android:text="Registra tu huella para desbloquear  tu motocicleta con tu dedo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_marginBottom="24dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btn_iniciar_sesion"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"
+                            android:padding="12dp"
+                            android:background="@drawable/btn_generico"
+                            android:layout_weight="80"
+                            android:textColor="@color/negro"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Registrar huella"></Button>
+                    </LinearLayout>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        ></LinearLayout>
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

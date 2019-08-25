@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FFEB3B</color>
     <color name="gris_fuerte">#6B6B6B</color>
+    <color name="gris_claro">#B3B3B3</color>
     <color name="amarillo">#FDE50E</color>
     <color name="amarillo_200">#948601</color>
     <color name="blanco">#FFFFFF</color>

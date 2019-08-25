@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.hacketon.prototipo.Constans.Constantes;
-import com.hacketon.prototipo.adapter.AdapterMotos;
+import com.hacketon.prototipo.adapterMotos.AdapterMotos;
 
 public class ActivityMotosRegistradas extends Activity {
     RecyclerView recyclerView;
@@ -32,7 +32,7 @@ public class ActivityMotosRegistradas extends Activity {
         String Fecha = "-04-2017";
 
         int i =0;
-        while(i<20){
+        while(i<3){
             Constantes.ListaMarca.add(Marca);
             Constantes.ListaModelo.add(Modelo+" " + i);
             Constantes.ListaFecha.add(i+"0"+Fecha+"" );
