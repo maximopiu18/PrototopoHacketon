@@ -15,6 +15,8 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 
+import com.hacketon.prototipo.Constans.Constantes;
+
 
 @RequiresApi(api = Build.VERSION_CODES.M)
 public class FingerprintHandler extends FingerprintManager.AuthenticationCallback {
@@ -45,9 +47,22 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
 
     @Override
     public void onAuthenticationFailed() {
-        Toast.makeText(context,
-                "Authentication failed",
-                Toast.LENGTH_LONG).show();
+        Toast.makeText(context, "Authentication failed", Toast.LENGTH_LONG).show();
+        if(Constantes.flujo ==0) {
+            Intent intent = new Intent(context, ActivityMotosRegistradas.class);
+            context.startActivity(intent);
+            ((Activity) context).finish();
+        }
+        else if(Constantes.flujo ==1){
+            Activity_RegistroHuella.tv_registro.setText("! Registro Exitoso ¡");
+            Activity_RegistroHuella.img_success.setImageResource(R.drawable.ic_accept_whilte);
+            Activity_RegistroHuella.img_success.setBackgroundResource(R.drawable.btn_circle2);
+            Activity_RegistroHuella.btn_registrar.setEnabled(true);
+            Activity_RegistroHuella.btn_registrar.setBackgroundResource(R.drawable.btn_generico);
+  /*          Intent intent = new Intent(context, ActivityMotosRegistradas.class);
+            context.startActivity(intent);
+            ((Activity) context).finish();*/
+        }
     }
 
     @Override
@@ -61,9 +76,21 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
             FingerprintManager.AuthenticationResult result) {
 
         //Toast.makeText(context, "Success!", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(context, ActivityMotosRegistradas.class);
-        context.startActivity(intent);
-        ((Activity) context).finish();
+        if(Constantes.flujo ==0) {
+            Intent intent = new Intent(context, ActivityMotosRegistradas.class);
+            context.startActivity(intent);
+            ((Activity) context).finish();
+        }
+        else if(Constantes.flujo ==1){
+            Activity_RegistroHuella.tv_registro.setText("! Registro Exitoso ¡");
+            Activity_RegistroHuella.img_success.setImageResource(R.drawable.ic_accept_whilte);
+            Activity_RegistroHuella.img_success.setBackgroundResource(R.drawable.btn_circle2);
+            Activity_RegistroHuella.btn_registrar.setEnabled(true);
+            Activity_RegistroHuella.btn_registrar.setBackgroundResource(R.drawable.btn_generico);
+  /*          Intent intent = new Intent(context, ActivityMotosRegistradas.class);
+            context.startActivity(intent);
+            ((Activity) context).finish();*/
+        }
     }
 
 

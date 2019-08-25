@@ -33,7 +33,7 @@ public class AdapterHuellas extends RecyclerView.Adapter<HolderHuellas>  {
     @Override
     public void onBindViewHolder(final HolderHuellas holder, final int position) {
 
-
+          holder.tvName.setText(Constantes.ListaHuellas.get(position));
       /*  holder.tvName.setText(Constantes.ListaMarca.get(position));
         holder.tvModel.setText(Constantes.ListaModelo.get(position));
         holder.tvDate.setText(Constantes.ListaFecha.get(position));
@@ -60,7 +60,7 @@ public class AdapterHuellas extends RecyclerView.Adapter<HolderHuellas>  {
     }
     @Override
     public int getItemCount() {
-        return Constantes.ListaMarca.size();
+        return Constantes.ListaHuellas.size();
     }
 
 }

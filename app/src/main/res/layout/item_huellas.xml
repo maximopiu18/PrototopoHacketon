@@ -17,10 +17,10 @@
 
     >
     <ImageView
-        android:layout_weight="25"
+        android:layout_weight="20"
         android:id="@+id/item_image"
         android:layout_width="0dp"
-        android:layout_height="75dp"
+        android:layout_height="64dp"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
@@ -31,7 +31,7 @@
         android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="55"
+        android:layout_weight="60"
         android:padding="12dp"
         >
         <TextView
