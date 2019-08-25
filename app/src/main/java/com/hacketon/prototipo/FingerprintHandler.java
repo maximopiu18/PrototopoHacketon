@@ -40,14 +40,12 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
     @Override
     public void onAuthenticationError(int errMsgId,
                                       CharSequence errString) {
-        Toast.makeText(context,
-                "Authentication error\n" + errString,
-                Toast.LENGTH_LONG).show();
+      //  Toast.makeText(context, "Authentication error\n" + errString, Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void onAuthenticationFailed() {
-        Toast.makeText(context, "Authentication failed", Toast.LENGTH_LONG).show();
+       // Toast.makeText(context, "Authentication failed", Toast.LENGTH_LONG).show();
         if(Constantes.flujo ==0) {
             Intent intent = new Intent(context, ActivityMotosRegistradas.class);
             context.startActivity(intent);
@@ -67,7 +65,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
 
     @Override
     public void onAuthenticationHelp(int helpMsgId, CharSequence helpString) {
-        Toast.makeText(context, "Authentication help\n" + helpString, Toast.LENGTH_LONG).show();
+    //    Toast.makeText(context, "Authentication help\n" + helpString, Toast.LENGTH_LONG).show();
     }
 
 
