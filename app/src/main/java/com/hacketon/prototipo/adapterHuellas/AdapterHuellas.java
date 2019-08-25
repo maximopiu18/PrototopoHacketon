@@ -26,7 +26,7 @@ public class AdapterHuellas extends RecyclerView.Adapter<HolderHuellas>  {
 
     @Override
     public HolderHuellas onCreateViewHolder(ViewGroup parent, final int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_motos, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_huellas, parent, false);
         return new HolderHuellas(view);
     }
 
@@ -34,7 +34,7 @@ public class AdapterHuellas extends RecyclerView.Adapter<HolderHuellas>  {
     public void onBindViewHolder(final HolderHuellas holder, final int position) {
 
 
-        holder.tvName.setText(Constantes.ListaMarca.get(position));
+      /*  holder.tvName.setText(Constantes.ListaMarca.get(position));
         holder.tvModel.setText(Constantes.ListaModelo.get(position));
         holder.tvDate.setText(Constantes.ListaFecha.get(position));
         if(position==0) {
@@ -56,7 +56,7 @@ public class AdapterHuellas extends RecyclerView.Adapter<HolderHuellas>  {
                 Intent intent = new Intent(context, Activity_Descripcion.class);
                 context.startActivity(intent);
             }
-        });
+        });*/
     }
     @Override
     public int getItemCount() {

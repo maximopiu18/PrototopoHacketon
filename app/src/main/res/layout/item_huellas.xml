@@ -24,7 +24,7 @@
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/img_moto" />
+        android:src="@drawable/ic_finger_black" />
     <LinearLayout
         android:layout_gravity="center"
         android:gravity="center|left"
@@ -47,7 +47,7 @@
 
         </TextView>
         <TextView
-            android:id="@+id/item_modelo"
+            android:id="@+id/item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"

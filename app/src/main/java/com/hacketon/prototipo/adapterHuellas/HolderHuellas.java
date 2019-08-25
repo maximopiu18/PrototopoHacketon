@@ -20,10 +20,7 @@ public class HolderHuellas extends RecyclerView.ViewHolder {
     public HolderHuellas(View itemView) {
         super(itemView);
         ivModelo = (ImageView) itemView.findViewById(R.id.item_image);
-        tvName = (TextView) itemView.findViewById(R.id.item_marca);
-        tvModel = (TextView) itemView.findViewById(R.id.item_modelo);
-        tvDate = (TextView) itemView.findViewById(R.id.item_fecha_entrega);
-        itemLinear = (LinearLayout) itemView.findViewById(R.id.item_layout);
+        tvName = (TextView) itemView.findViewById(R.id.item_name);
     }
     
 }
