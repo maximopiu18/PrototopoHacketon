@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
+import com.hacketon.prototipo.Constans.Constantes;
+
 public class Splash extends AppCompatActivity {
 MyAsyck asyck;
     @Override
@@ -39,8 +41,24 @@ MyAsyck asyck;
         }
     }
     public void login(){
+        createListHardcode();
         Intent intent = new Intent(Splash.this, ActivityLogin.class);
         startActivity(intent);
         finish();
+    }
+
+    public void createListHardcode(){
+
+        String Marca ="Italika";
+        String Modelo = "Modelo Sport";
+        String Fecha = "-04-2017";
+
+        int i =0;
+        while(i<2){
+            Constantes.ListaMarca.add(Marca);
+            Constantes.ListaModelo.add(Modelo+" " + i);
+            Constantes.ListaFecha.add(i+"0"+Fecha+"" );
+            i++;
+        }
     }
 }

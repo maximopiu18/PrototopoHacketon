@@ -1,5 +1,6 @@
 package com.hacketon.prototipo.adapterMotos;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -51,9 +52,10 @@ public class AdapterMotos extends RecyclerView.Adapter<HolderMotos>  {
             public void onClick(View v) {
 
                 Log.e("position", "position: " + position);
-                posicionHeroe = position;
+                Constantes.positionMoto = position;
                 Intent intent = new Intent(context, Activity_Descripcion.class);
                 context.startActivity(intent);
+                ((Activity) context).finish();
             }
         });
     }

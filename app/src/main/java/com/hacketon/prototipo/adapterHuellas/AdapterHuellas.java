@@ -1,5 +1,6 @@
 package com.hacketon.prototipo.adapterHuellas;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -34,29 +35,19 @@ public class AdapterHuellas extends RecyclerView.Adapter<HolderHuellas>  {
     public void onBindViewHolder(final HolderHuellas holder, final int position) {
 
           holder.tvName.setText(Constantes.ListaHuellas.get(position));
-      /*  holder.tvName.setText(Constantes.ListaMarca.get(position));
-        holder.tvModel.setText(Constantes.ListaModelo.get(position));
-        holder.tvDate.setText(Constantes.ListaFecha.get(position));
-        if(position==0) {
-            holder.ivModelo.setImageResource(R.drawable.img_moto);
-        }
-        if(position==1) {
-            holder.ivModelo.setImageResource(R.drawable.img_moto2);
-        }
-        if(position==2) {
-            holder.ivModelo.setImageResource(R.drawable.img_moto3);
-        }
-
-        holder.itemLinear.setOnClickListener(new View.OnClickListener() {
+          if(position !=0)
+          {
+              holder.tv_roll.setText("Invitado");
+          }
+        holder.ivDelete.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-                Log.e("position", "position: " + position);
-                posicionHeroe = position;
+            public void onClick(View view) {
+                Constantes.ListaHuellas.remove(position);
                 Intent intent = new Intent(context, Activity_Descripcion.class);
                 context.startActivity(intent);
+                ((Activity) context).finish();
             }
-        });*/
+        });
     }
     @Override
     public int getItemCount() {

@@ -118,6 +118,8 @@
                         android:gravity="center"
                         >
                         <EditText
+                            android:lines="1"
+                            android:inputType="text"
                             android:id="@+id/ed_nombre_usuario"
                             android:textStyle="bold"
                             android:layout_margin="16dp"

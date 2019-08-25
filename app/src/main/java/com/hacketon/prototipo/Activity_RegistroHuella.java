@@ -3,6 +3,7 @@ package com.hacketon.prototipo;
 import android.Manifest;
 import android.app.Activity;
 import android.app.KeyguardManager;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
@@ -69,6 +70,8 @@ public class Activity_RegistroHuella extends Activity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(Activity_RegistroHuella.this, Activity_Descripcion.class);
+                startActivity(intent);
                 finish();
             }
         });
@@ -76,6 +79,8 @@ public class Activity_RegistroHuella extends Activity {
             @Override
             public void onClick(View view) {
                 Constantes.ListaHuellas.add(ed_nombreusuario.getText().toString());
+                Intent intent = new Intent(Activity_RegistroHuella.this, Activity_Descripcion.class);
+                startActivity(intent);
                 finish();
               //  Toast.makeText(Activity_RegistroHuella.this, "enviando datos al backend", Toast.LENGTH_SHORT).show();
             }
