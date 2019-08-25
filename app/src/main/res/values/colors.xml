@@ -7,6 +7,7 @@
     <color name="amarillo">#FDE50E</color>
     <color name="amarillo_200">#948601</color>
     <color name="blanco">#FFFFFF</color>
+    <color name="blanco_amarillo">#FAF4C6</color>
     <color name="negro">#000000</color>
 
 </resources>

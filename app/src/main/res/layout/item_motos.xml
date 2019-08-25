@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="6dp"
+    android:padding="6dp"
+    >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:background="@drawable/btn_item_recicler"
+
+    >
+    <ImageView
+        android:layout_weight="35"
+        android:id="@+id/item_image"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_moto" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="65"
+        android:padding="12dp"
+        >
+        <TextView
+            android:id="@+id/item_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textColor="@color/amarillo"
+            android:text="ITALICA"
+            android:textSize="20dp"
+            android:layout_margin="6dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/item_modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/negro"
+            android:text="Moto Deportiva  RT 250"
+            android:textSize="20dp"
+            android:layout_margin="6dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/item_fecha_entrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="20-abril-2019"
+            android:textSize="20dp"
+            android:layout_margin="6dp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>

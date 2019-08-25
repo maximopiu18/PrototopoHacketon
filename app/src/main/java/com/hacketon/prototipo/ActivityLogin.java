@@ -23,7 +23,7 @@ public class ActivityLogin extends AppCompatActivity {
         btn_inciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActivityLogin.this, MenuPrincipaL.class);
+                Intent intent = new Intent(ActivityLogin.this, ActivityMotosRegistradas.class);
                 startActivity(intent);
                 finish();
             }

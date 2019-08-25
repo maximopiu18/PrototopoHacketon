@@ -20,17 +20,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ActivityLogin"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
-        <activity android:name=".MenuPrincipaL">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity android:name=".ActivityMotosRegistradas">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityLogin"
+        <activity android:name=".Activity_Descripcion"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
